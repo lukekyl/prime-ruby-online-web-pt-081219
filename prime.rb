@@ -6,7 +6,6 @@ def prime?(integer)
     new_integer = integer
   end 
   
-  
   if new_integer == 1
       return false
   elsif (2..new_integer).any? {|i| new_integer % i == 0}
