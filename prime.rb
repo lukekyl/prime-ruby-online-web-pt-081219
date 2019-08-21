@@ -8,11 +8,12 @@ def prime?(integer)
   
   if (2..new_integer-1).any? {|i| new_integer % i == 0}
       return false
-    elsif new_integer == 1 
+  elsif new_integer == 1 
       return false
-    end
+  else 
+    return true
   end
-  return true
+ 
 end
 
 def prime?(n)
