@@ -8,7 +8,7 @@ def prime?(integer)
   
   if new_integer == 1
       return false
-  elsif (2..new_integer).any? {|i| new_integer % i == 0}
+  elsif (2...new_integer).any? {|i| new_integer % i == 0}
       return false
   else 
     return true
