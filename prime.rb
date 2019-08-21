@@ -1,5 +1,8 @@
 
 def prime?(integer)
-  return integer.prime?
+  
+  (2..integer).each {||
+  
+  }
   
 end
