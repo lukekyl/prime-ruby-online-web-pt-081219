@@ -1,5 +1,5 @@
 
 def prime?(integer)
-  if integer
+  return integer.prime?
   
 end
