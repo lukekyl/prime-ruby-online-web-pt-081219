@@ -6,12 +6,23 @@ def prime?(integer)
     new_integer = integer
   end 
   
-  (2..new_integer-1).each do |i|
-    if new_integer % i == 0
+  if (2..new_integer-1).any? {|i| new_integer % i == 0}
       return false
     elsif new_integer == 1 
       return false
     end
   end
   return true
+end
+
+def prime?(n)
+    if n <= 1
+      return false
+    else 
+        if (2...n).any? { |i| n % i  == 0}
+            return false
+        else
+            return true
+        end 
+    end
 end
