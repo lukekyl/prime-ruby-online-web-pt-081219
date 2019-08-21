@@ -10,7 +10,7 @@ def prime?(integer)
     if new_integer % i != 0
       return true
     end
-      
+    return false
   end
-  return false
+  
 end
