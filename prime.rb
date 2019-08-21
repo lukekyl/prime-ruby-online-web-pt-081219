@@ -10,6 +10,6 @@ def prime?(integer)
     if new_integer % i == 0
       return true
     end
-      return true
+      return false
   end
 end
