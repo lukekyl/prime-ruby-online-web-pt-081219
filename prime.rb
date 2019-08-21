@@ -7,8 +7,8 @@ def prime?(integer)
   end 
   
   (2..new_integer).each do |i|
-    if new_integer % i == false
-      return true
+    if new_integer % i == 0
+      return false
     else
       return false
     end
